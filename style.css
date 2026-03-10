@@ -1,18 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
     box-sizing: border-box;
+
 }
 
 body {
     font-size: small;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+
 }
 
 nav {
-    height: 20%;
-    width: 100%;
-    background: #000;
+    height: 15vh;
+    width: 100vw;
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,10 +24,26 @@ nav {
 
 }
 
+/* remix icons */
+i {
+    color: white;
+}
+
+/* remix icons */
+
 /* Nav log style start  */
 .logo {
+    color: white;
     font-weight: 400;
     font-size: large;
+    text-align: center;
+}
+
+.logo img {
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Nav log style end  */
@@ -36,6 +56,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:hover {
@@ -43,12 +64,64 @@ a:hover {
 }
 
 /* nav done */
-h1 {
+.hero p {
+    margin-top: 1rem;
     color: black;
     text-align: center;
     align-content: center;
-    margin: 16%;
+    font-size: larger;
 }
+
+/* hero section starts*/
+.hero img {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* hero section ends*/
+
+/* footer start here */
+footer {
+    background-color: black;
+    color: whitesmoke;
+    height: 15vh;
+    width: 100vw;
+    padding: auto 1rem;
+}
+
+.icons ul {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: auto 2px;
+
+
+}
+
+.icons ul li i {
+    height: 100%;
+    width: 100%;
+    margin: 8px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    /* background-color: gray; */
+
+}
+
+.icons ul li i:hover {
+    color: black;
+    background-color: aqua;
+}
+
+
+
+/* footer start here */
+
 
 /* Responsive */
 @media screen and (min-width:780px) {
