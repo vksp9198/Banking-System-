@@ -2,20 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /* overflow: hidden; */
 }
 
 body {
     font-size: small;
-    height: 100vh;
-    width: 100vw;
-    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 
 }
 
 nav {
-    height: 15vh;
-    width: 100vw;
+    height: 15%;
+    width: 100%;
     background: black;
     display: flex;
     justify-content: space-between;
@@ -23,13 +23,6 @@ nav {
     padding: 0.6rem 2rem;
 
 }
-
-/* remix icons */
-i {
-    color: white;
-}
-
-/* remix icons */
 
 /* Nav log style start  */
 .logo {
@@ -64,63 +57,70 @@ a:hover {
 }
 
 /* nav done */
+
+/* hero section starts*/
+.hero {
+    height: 70%;
+    width: 100%;
+}
+
+.hero img {
+    object-fit: cover;
+}
+
 .hero p {
-    margin-top: 1rem;
     color: black;
     text-align: center;
     align-content: center;
     font-size: larger;
 }
 
-/* hero section starts*/
-.hero img {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-
-}
-
 /* hero section ends*/
 
-/* footer start here */
+/* footer starts here */
 footer {
-    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.916);
     color: whitesmoke;
-    height: 15vh;
-    width: 100vw;
-    padding: auto 1rem;
+    text-align: center;
+    height: 7%;
+    width: 100%;
+
 }
 
-.icons ul {
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: space-evenly;
+/* remix icons */
+i {
+    color: wheat;
+    font-size: 24px;
+    margin-top: 4px;
+    padding: 4px;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    margin: auto 2px;
-
-
 }
 
-.icons ul li i {
-    height: 100%;
-    width: 100%;
-    margin: 8px;
-    padding: 3px 5px;
-    border-radius: 4px;
-    /* background-color: gray; */
-
+i:hover {
+    color: aqua;
 }
 
-.icons ul li i:hover {
-    color: black;
-    background-color: aqua;
+/* remix icons */
+.icons {
+    color: whitesmoke;
+    margin-top: 5px;
+    align-self: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons a {
+    height: 34px;
+    width: 34px;
 }
 
 
 
-/* footer start here */
+/* footer ends here */
 
 
 /* Responsive */
