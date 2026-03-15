@@ -9,6 +9,7 @@ body {
     font-size: small;
     height: 100%;
     width: 100%;
+    cursor: pointer;
     overflow-x: hidden;
 
 }
@@ -80,48 +81,6 @@ a:hover {
 
 /* hero section ends*/
 
-/* footer starts here */
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.916);
-    color: whitesmoke;
-    text-align: center;
-    height: 7%;
-    width: 100%;
-
-}
-
-/* remix icons */
-i {
-    color: wheat;
-    font-size: 24px;
-    margin-top: 4px;
-    padding: 4px;
-    align-items: center;
-}
-
-i:hover {
-    color: aqua;
-}
-
-/* remix icons */
-.icons {
-    color: whitesmoke;
-    margin-top: 5px;
-    align-self: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.icons a {
-    height: 34px;
-    width: 34px;
-}
-
-
 /* sidebar style start */
 .sidebar {
     color: white;
@@ -171,9 +130,48 @@ i:hover {
     margin-right: 12px;
 }
 
-
 /* sidebar style end */
 
+/* footer starts here */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    text-align: center;
+    height: 7%;
+    width: 100%;
+
+}
+
+.icons {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.icons a {
+    height: 34px;
+    width: 34px;
+}
+
+/* remix icons style starts  */
+i {
+    color: white;
+    font-size: 24px;
+    margin-top: 8px;
+    padding: 4px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+i:hover {
+    color: aqua;
+}
+
+/* remix icons style ends */
 
 /* footer ends here */
 
@@ -207,6 +205,24 @@ i:hover {
 
     #sidebar {
         display: none;
+    }
+
+    /* footer icons  */
+    footer {
+        height: 10%;
+    }
+
+    .icons a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    i {
+        width: 100%;
+        font-size: 32px;
+        margin: 32px;
     }
 
 }
