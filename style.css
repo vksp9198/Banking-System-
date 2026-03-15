@@ -157,6 +157,10 @@ footer {
     width: 34px;
 }
 
+.icons i {
+    text-align: center;
+}
+
 /* remix icons style starts  */
 i {
     color: white;
@@ -222,7 +226,6 @@ i:hover {
     i {
         width: 100%;
         font-size: 32px;
-        margin: 32px;
     }
 
 }

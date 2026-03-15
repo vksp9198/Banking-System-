@@ -6,23 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>History</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     </head>
 
     <body>
         <!-- navbar start here -->
         <nav>
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <img src="images\logo.jpg" alt="logo" srcset="">
+                <p>Crystal</p>
+            </div>
             <div class="list">
                 <ul>
-                    <li> <a href="index.html">Dashboard</a></li>
                     <li> <a href="deposit.html">Deposit Amount</a> </li>
                     <li> <a href="withdraw.html">Withdraw Amount</a></li>
+                    <li> <a href="history.html">History</a></li>
+                    <li> <a href="myProfile.html">My Profile</a></li>
+                </ul>
+                <i class="ri-menu-line" id="showSidebar"></i>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <ul class="sidebar-list">
+                    <i class="ri-close-fill sidebar-close" id="hideSidebar"></i>
+                    <li> <a href="deposit.html">Deposit Amount</a> </li>
+                    <li> <a href="withdraw.html">Withdraw Amount</a></li>
+                    <li> <a href="history.html">History</a></li>
                     <li> <a href="myProfile.html">My Profile</a></li>
                 </ul>
             </div>
         </nav>
         <!-- navbar ends here -->
         <h1>History Page </h1>
+
+        <!-- footer starts here  -->
+        <footer>
+            <div class="icons">
+                <a href="index.html"><i class="ri-home-line"></i></a>
+                <a href="deposit.html"><i class="ri-money-rupee-circle-line"></i></a>
+                <a href="withdraw.html"><i class="ri-cash-line"></i></a>
+                <a href="history.html"><i class="ri-account-circle-line"></i></a>
+                <a href="http://github.com/vksp9198"><i class="ri-contacts-line"></i></a>
+            </div>
+        </footer>
+        <!-- footer ends here  -->
+        <script src="script/script.js"></script>
     </body>
 
 </html>
