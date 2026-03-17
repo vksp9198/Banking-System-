@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#depositImg {
+    display: none;
+}
+
+/* Card UI */
+.card {
+    overflow-y: hidden;
+    width: 350px;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.card h2 {
+    margin-bottom: 20px;
+    color: #0a2a66;
+}
+
+/* Inputs */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+input:focus,
+select:focus {
+    border-color: #1e88e5;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0a2a66;
+    transform: scale(1.03);
+}
+
+
+/* Message */
+#msg1,
+#msg2 {
+    color: #000;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Balance Box */
+.balance-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.balance-box h3 {
+    color: #1e88e5;
+}
+
+@media screen and (min-width:780px) {
+    body {
+        overflow: scroll;
+    }
+
+    #depositImg {
+        display: flex;
+        object-fit: cover;
+        height: 70vh;
+        width: 70%;
+
+    }
+
+}

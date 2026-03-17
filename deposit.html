@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Deposit</title>
-        <link rel="stylesheet" href="style.css" class="css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/deposit.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     </head>
 
@@ -36,8 +37,34 @@
             </div>
         </nav>
         <!-- navbar ends here -->
-        <h1>Deposit Page </h1>
+        <!-- hero part  -->
+        <div class="container">
+            <div class="depositImg">
+                <img src="images/deposit.jpg" alt="img" srcset="" id="depositImg">
+            </div>
+            <div class="card">
 
+                <h2> Deposit Money</h2>
+
+                <label for="account">Account Number</label>
+                <input type="text" id="account" placeholder="Enter Account No">
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter Amount">
+
+                <label for="payment">Payment Method</label>
+                <select id="payment">
+                    <option>Cash</option>
+                    <option>UPI</option>y
+                    <option>Debit Card</option>
+                    <option>Net Banking</option>
+                </select>
+                <button>Deposit</button>
+                <p id="msg1"></p>
+                <p id="msg2"></p>
+            </div>
+
+        </div>
 
         <!-- footer starts here  -->
         <footer>
@@ -51,6 +78,7 @@
         </footer>
         <!-- footer ends here  -->
         <script src="script/script.js"></script>
+        <script src="script/payment.js"></script>
     </body>
 
 </html>

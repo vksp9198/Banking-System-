@@ -4,10 +4,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Withdraw</title>
-        <link rel="stylesheet" href="style.css" class="css">
-        <link rel="stylesheet" href="styles/withdraw.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/createAcc.css">
+        <title>Create Account</title>
     </head>
 
     <body>
@@ -37,15 +37,19 @@
             </div>
         </nav>
         <!-- navbar ends here -->
-        <div class="withdraw-container">
-            <h1>Withdraw Amount</h1>
-            <div class="current-balance">Current Balance: ₹ <span id="balance">5000</span></div>
-            <label for="amt">Amount: </label>
-            <input type="number" name="amt" id="amt" placeholder="Enter amount"> <br>
-            <button>Withdraw Money</button> <br>
-            <p id="msg"></p>
 
+        <div class="container">
+            <h1>Account Creation</h1>
+            <div class="inputs">
+                <label for="name">Holder Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter name "><br>
+                <label for="number">Account Number: </label>
+                <input type="text" name="number" id="number" placeholder="Enter number "><br>
+            </div>
+            <button>Create Account</button>
+            <p id="msg"></p>
         </div>
+
         <!-- footer starts here  -->
         <footer>
             <div class="icons">
@@ -58,6 +62,7 @@
         </footer>
         <!-- footer ends here  -->
         <script src="script/script.js"></script>
+
     </body>
 
 </html>
