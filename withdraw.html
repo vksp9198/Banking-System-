@@ -19,6 +19,7 @@
             </div>
             <div class="list">
                 <ul>
+                    <li> <a href="createAcc.html">Create Account</a> </li>
                     <li> <a href="deposit.html">Deposit Amount</a> </li>
                     <li> <a href="withdraw.html">Withdraw Amount</a></li>
                     <li> <a href="history.html">History</a></li>
@@ -29,6 +30,7 @@
             <div class="sidebar" id="sidebar">
                 <ul class="sidebar-list">
                     <i class="ri-close-fill sidebar-close" id="hideSidebar"></i>
+                    <li> <a href="createAcc.html">Create Account</a> </li>
                     <li> <a href="deposit.html">Deposit Amount</a> </li>
                     <li> <a href="withdraw.html">Withdraw Amount</a></li>
                     <li> <a href="history.html">History</a></li>
@@ -38,12 +40,17 @@
         </nav>
         <!-- navbar ends here -->
         <div class="withdraw-container">
-            <h1>Withdraw Amount</h1>
-            <div class="current-balance">Current Balance: ₹ <span id="balance">5000</span></div>
-            <label for="amt">Amount: </label>
-            <input type="number" name="amt" id="amt" placeholder="Enter amount"> <br>
-            <button>Withdraw Money</button> <br>
-            <p id="msg"></p>
+            <div id="withdrawImg">
+                <img src="images/withdrawM.jpg" alt="withdraw" srcset="" height="300" width="300">
+            </div>
+            <div class="card">
+                <h1>Withdraw Amount</h1>
+                <div class="current-balance">Current Balance: ₹ <span id="balance">5000</span></div>
+                <label for="amt">Amount: </label>
+                <input type="number" name="amt" id="amt" placeholder="Enter amount"> <br>
+                <button>Withdraw Money</button> <br>
+                <p id="msg"></p>
+            </div>
 
         </div>
         <!-- footer starts here  -->

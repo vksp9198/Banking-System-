@@ -5,17 +5,34 @@
 }
 
 body {
+    height: 100%;
     overflow: hidden;
 }
 
 .withdraw-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#withdrawImg {
+    display: none;
+}
+
+.card {
+    overflow-y: hidden;
+    width: 60vh;
     height: 100vh;
-    width: 100vw;
-    color: #000;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: #f3f4f6;
-    padding: 16px 12px 16px 12px;
-    font-size: medium;
+}
+
+.card h1 {
+    margin-bottom: 32px;
+    color: #0a2a66;
 }
 
 .current-balance {
@@ -27,27 +44,66 @@ body {
     width: 26vh;
 }
 
-input {
-    font-size: small;
-    padding: 4px 8px;
+/* Inputs */
+input,
+select,
+.current-balance {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-size: 12px;
+    border: 2px solid #1e88e5;
+}
+
+.current-balance {
+    background-color: aliceblue;
+    color: #0a2a66;
+    font-size: 18px;
+}
+
+input:focus,
+select:focus {
+    border-color: #1e88e5;
+    outline: none;
 }
 
 button {
+    width: 100%;
     margin-top: 32px;
     color: #f3f4f6;
-    background-color: rgb(0, 0, 255);
+    background-color: #0a2a66;
     padding: 10px 20px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 255);
+    transform: scale(1.03);
 }
 
 #msg {
     margin-top: 32px;
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:700px) {
     .withdraw-container {
-        font-size: large;
+        height: 100%;
+        width: 100%;
+        font-size: medium;
+    }
 
+    #withdrawImg {
+        display: flex;
+        object-fit: cover;
+    }
+
+    .card {
+        margin: 32px;
+        width: 60vh;
+        height: 60vh;
     }
 }
