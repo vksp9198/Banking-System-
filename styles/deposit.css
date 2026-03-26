@@ -5,6 +5,10 @@
     font-family: Arial;
 }
 
+body {
+    overflow: hidden;
+}
+
 /* Main Container */
 .container {
     width: 100%;
@@ -19,7 +23,6 @@
 
 /* Card UI */
 .card {
-    overflow-y: hidden;
     width: 100vh;
     height: 100vh;
     background: white;
@@ -87,15 +90,15 @@ button:hover {
     #depositImg {
         display: flex;
         object-fit: cover;
-        height: 70vh;
-        width: 70%;
+        height: 444px;
+        width: 444px;
 
     }
 
     .card {
-        margin: 32px;
         width: 60vh;
-        height: 60vh;
+        height: 70vh;
+        margin-top: 12px;
     }
 
 }

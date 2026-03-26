@@ -14,14 +14,27 @@ body {
     overflow: hidden;
 }
 
+.upperContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#cImg {
+    display: none;
+}
+
 .container {
     color: #000;
     text-align: center;
-    padding-top: 24px;
-    width: 320px;
-    height: 70vh;
+    /* padding-top: 24px; */
+    width: 65vh;
+    height: 100vh;
     background: white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
 }
 
 h1 {
@@ -63,4 +76,23 @@ button {
 button:hover {
     background: #0a2a66;
     transform: scale(1.03);
+}
+
+@media screen and (min-width:780px) {
+    #cImg {
+        display: flex;
+        object-fit: cover;
+        margin-top: 4px;
+        height: 444px;
+        width: 444px;
+    }
+
+    .container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        height: 60vh;
+    }
 }
